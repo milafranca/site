@@ -3,119 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Classic Motors</title>
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css">
 </head>
 <body>
-    
     <header>
         <h1>Classic Motors</h1>
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="produtos.html">Veículos</a></li>
+                <li><a href="produtos.html">Carros</a></li>
+                <li><a href="contato.html">Contato</a></li>
                 <li><a href="suporte.html">Suporte</a></li>
-                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
-       <div id="logo"></div>
-       <p style="margin-bottom: 20px;"></p>
-    </div>
-    </div>
-    </div>
-    <div id="contact-us">
-        <img src="https://lucent-sable-99ba0d.netlify.app/img/contato.webp" alt srcset style="width: fit-content;">
-        <div id="contact-us">
-            <h2 style="color: #a98e8e;">Contato</h2>
-            <div id="contact-details">
-                <div class="contact-item">
-                    <i Class="fas fa-envelope">
-                        ::before 
-                    </i>
-                    <span>nome1@example.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone">
-                        ::before 
-                    </i>
-                    <span>(xx) xxxx-xxxx</span>
-                    <br>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-user">
-                        ::before
-                    </i>
-                    <span>Nome 1</span>
-                </div>
-            </div>
-            <div id="contact-details">
-                <div class="contact-item">
-                    <i Class="fas fa-envelope">
-                        ::before
-                    </i>
-                    <span>nome2@example.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone">
-                        ::before
-                    </i>
-                    <span>(xx) xxxx-xxxx</span>
-                    <br>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-user">
-                        ::before
-                    </i>
-                    <span>Nome 2</span>
-                </div>
-            </div>
-            <div id="contact-details">
-                <div class="contact-item">
-                    <i Class="fas fa-envelope">
-                        ::before
-                    </i>
-                    <span>nome3@example.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone">
-                        ::before
-                    </i>
-                    <span>(xx) xxxx-xxxx</span>
-                    <br>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-user">
-                        ::before
-                    </i>
-                    <span>Nome 3</span>
-                </div>
-            </div>
-            <div id="contact-details">
-                <div class="contact-item">
-                    <i Class="fas fa-envelope">
-                        ::before
-                    </i>
-                    <span>nome4@example.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone">
-                        ::before
-                    </i>
-                    <span>(xx) xxxx-xxxx</span>
-                    <br>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-user">
-                        ::before
-                    </i>
-                    <span>Nome 4</span>
-                </div>
-            </div>
+    <div class="container">
+        <h1>Entre em Contato</h1>
+        
+        <div class="informacoes-contato">
+          <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade, Estado</p>
+          <p><strong>Telefone:</strong> (12) 3456-7890</p>
+          <p><strong>Email:</strong> contato@lojaexemplo.com</p>
         </div>
-    </div>
-    <footer>
-        &copy; 2023 Desenvolvido por...
-    </footer>
+        
+        <form action="enviar.php" method="POST">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required>
+          
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+          
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
 </body>
 </html>
