@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Dash Horizon;
+    image-resolution:initial;
+    font-size:x-large;
+    background-color: black;
+  }
+  
+  header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: maroon;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  form input,
+  form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
+  
+  form input[type="submit"] {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: maroon;
+  }
