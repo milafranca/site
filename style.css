@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Dash Horizon;
-  background-image: url(https://wallpaperaccess.com/full/4615291.png);
+  background-image: url();
   image-resolution:initial;
 }
 
@@ -22,6 +22,7 @@ header {
   z-index: 999;
   justify-content: center;
   align-items: center;
+  font-family: Dash Horizon;
   
   
 }
@@ -43,6 +44,45 @@ nav a {
   font-size: 16px;
 }
 
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.5 ease;
+  
+}
+
+ul li {
+  margin-right: 20px;
+  
+}
+
+ul li a:hover{
+  background-color: #ffffff2e;
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid white;
+}
+
+ul li a::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease-out;
+}
+
+ul li:hover a::before{
+  width: 4%;
+  transition: width 0.9s ease-in-out;
+}
+
+ul li.active a{
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
 #nc-main {
   position: relative;
   height: 100vh;
@@ -56,7 +96,10 @@ nav a {
 }
 
 #nc-main {
-background-image: url(https://wallpaperaccess.com/full/4615291.png);
+  background-image: url(https://rmsothebys-cache.azureedge.net/f/2/a/e/b/4/f2aeb4d3c89176a820fd74eec370da3bff5f1d11.jpg);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .full-wh {
@@ -205,5 +248,14 @@ to {
   100% { color: red; }
 }
 
-
-    
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 1.0rem;
+  top: 80%;
+  font-size: 20px;
+}
